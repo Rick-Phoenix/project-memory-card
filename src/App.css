@@ -33,10 +33,30 @@
   }
 }
 
+img.pokemonImg {
+  height: 100%;
+}
+
 .card {
-  padding: 2em;
+  background-color: grey;
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 0 5px #807b7b;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+div.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 1rem;
 }
